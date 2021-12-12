@@ -3,15 +3,23 @@
     <head>
         <title>Minha primeira página 🤙</title>
         <!--
-            um truque:
-            vc pode informar em border-radius a METADE do valor de width para deixar
-            a imagem redonda
-            o valor pode ser informado em % para obter o mesmo resultado: 50%
+            Hummm, nossos elementos ainda estão um em cima do outro, vamos melhorar isso
+            usando a propriedade float podemos jogar a imagem para o lado dos nossos parágrafos
+            
+            *demonstrar mudanças*
+
+            obs.: Vamos abordar flexbox com mais calma no futuro, muito cedo pra passar isso
+        -->
+        <!-- 
+            A imagem ficou legal, mas agora o texto tá muito colado na imagem
+            vamos adicionar uma margem pra melhorar a leitura!
         -->
         <style>
             img {
                 width: 100px;
                 border-radius: 50px;
+                float: left;
+                margin-right: 15px;
             }
         </style>
     </head>
