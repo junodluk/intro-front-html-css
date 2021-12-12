@@ -3,16 +3,22 @@
     <head>
         <title>Minha primeira página 🤙</title>
         <!--
-            Hummm, nossos elementos ainda estão um em cima do outro, vamos melhorar isso
-            usando a propriedade float podemos jogar a imagem para o lado dos nossos parágrafos
+            Vamos agora deixar o nome do usuário negrito, vamos adicionar uma nova regra para o elemento p
             
             *demonstrar mudanças*
-
-            obs.: Vamos abordar flexbox com mais calma no futuro, muito cedo pra passar isso
         -->
-        <!-- 
-            A imagem ficou legal, mas agora o texto tá muito colado na imagem
-            vamos adicionar uma margem pra melhorar a leitura!
+        <!--
+            Oh! parece que o conteúdo do tweet e o nome do usuário estão ambos em negrito, precisamos melhorar isso.
+            Para isso vamos criar uma classificação CSS (class) de nome 'username'
+            Demonstrar que vc pode deixar tanto 'p.username' como '.username'
+            
+            *demonstrar mudanças*
+        -->
+        <!--
+            Muito melhor!
+            Como podemos observar, CSS tem uma sintaxe (uma forma de se escrever) muito diferente de HTML
+            Usar o DevTools para inspecionar os elementos HTML e falar um pouquinho sobre a DOM
+            Mostrar como o CSS de cada elemento pode ser verificado e até alterado para experimentação
         -->
         <style>
             img {
@@ -21,6 +27,10 @@
                 float: left;
                 margin-right: 15px;
             }
+
+            p.username {
+                font-weight: bold;
+            }
         </style>
     </head>
     <body>
@@ -28,7 +38,7 @@
             src="imagens/avatar.png"
             alt="Foto de rosto de uma pessoa de pele escura e cabelos azuis sorrindo levemente"
         />
-        <p>martonilda @suco_de_uva</p>
+        <p class="username">martonilda @suco_de_uva</p>
         <p>dos mesmos criadores de kkkcrying, vem ai hehehehehehelp</p>
     </body>
 </html>
