@@ -1,4 +1,7 @@
-img {
+/*
+    vamos manter esse estilo apenas para a imagem de avatar criando uma nova classe
+*/
+img.avatar {
     width: 100px;
     border-radius: 50px;
     float: left;
@@ -7,4 +10,18 @@ img {
 
 span.username {
     font-weight: bold;
+}
+
+/*
+    Esta imagem vai ficar muito grande então vamos diminuir seu tamanho
+    Em nosso site queremos que todas as imagens tenham mais ou menos o mesmo tamanho para que o layout se mantenha consistente
+    Então vamos também limitar a altura dessa imagem
+    Eita, a imagem ficou beem achatada, para evitar isso vamos usar 'object-fit' com valor cover para distribuir melhor a imagem nesse tamanho reduzido
+    
+    No DevTools, explorar diferentes opções desse atributo
+*/
+img.tweet-img {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
 }
