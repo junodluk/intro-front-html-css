@@ -1,34 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <title>Minha primeira página 🤙</title>
-        <!--
-            2. Precisamos também alterar o CSS para que a classe username agora esteja vinculada ao elemento span
-        -->
+        <title>Home</title>
         <style>
-            img {
-                width: 100px;
-                border-radius: 50px;
-                float: left;
-                margin-right: 15px;
-            }
-
-            span.username {
-                font-weight: bold;
-            }
         </style>
     </head>
     <body>
-        <img
-            src="imagens/avatar.png"
-            alt="Foto de rosto de uma pessoa de pele escura e cabelos azuis sorrindo levemente"
-        />
         <!--
-            1. Segundo a referência, apenas o nome do usuário deve ficar negrito, sua @ não
-            Então vamos usar um novo elemento, span
-            Span serve pra pequenas frases ou expressões, ao invés de parágrafos grandes
+            Quase todas as páginas na internet possuem links para outras páginas
+            Para criar esses links nós usamos o elemento âncora (a)
+            Todo elemento âncora deve possuir o atributo "href" (hypertext reference) que é o endereço de destino do link
+            E para termos onde clicar, vamos adicionar um conteúdo à âncora, no nosso caso, um texto: Sobre mim
+
+            Então vamos criar um novo arquivo: sobre.html
         -->
-        <p><span class="username">martonilda</span> @suco_de_uva</p>
-        <p>dos mesmos criadores de kkkcrying, vem ai hehehehehehelp</p>
+        <a href="paginas/sobre.html">Sobre mim</a>
     </body>
 </html>
