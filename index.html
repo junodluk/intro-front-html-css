@@ -1,15 +1,10 @@
-<!--
-    Validação CSS
-    https://jigsaw.w3.org/css-validator/#validate_by_input
-    Copiar e colar código CSS e validar
-    O código vai estar sem erros, mas você pode forçar a barra pra mostrar um erro aparecer.
-    Ex.: Tirar alguns ';', colocar 'middle' no float, etc
--->
 <!DOCTYPE html>
 <html lang="pt">
     <head>
         <title>Minha primeira página 🤙</title>
-        
+        <!--
+            2. Precisamos também alterar o CSS para que a classe username agora esteja vinculada ao elemento span
+        -->
         <style>
             img {
                 width: 100px;
@@ -18,7 +13,7 @@
                 margin-right: 15px;
             }
 
-            p.username {
+            span.username {
                 font-weight: bold;
             }
         </style>
@@ -28,7 +23,12 @@
             src="imagens/avatar.png"
             alt="Foto de rosto de uma pessoa de pele escura e cabelos azuis sorrindo levemente"
         />
-        <p class="username">martonilda @suco_de_uva</p>
+        <!--
+            1. Segundo a referência, apenas o nome do usuário deve ficar negrito, sua @ não
+            Então vamos usar um novo elemento, span
+            Span serve pra pequenas frases ou expressões, ao invés de parágrafos grandes
+        -->
+        <p><span class="username">martonilda</span> @suco_de_uva</p>
         <p>dos mesmos criadores de kkkcrying, vem ai hehehehehehelp</p>
     </body>
 </html>
