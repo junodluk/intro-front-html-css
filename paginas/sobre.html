@@ -5,15 +5,12 @@
 </head>
 <body>
     <!--
-        Okay, mas como fazemos para o usuário voltar à página inicial ?
-        Vamos criar um novo elemento âncora na página sobre!
-        Dessa vez não vai ser tão simples
-        O arquivo index.html não está na mesma pasta que o arquivo sobre.html
-        Precisamos ir um nível acima nas pastas para acessar index.html
-        Para fazer isso digitamos '../'
         Se quisessemos subir mais um nível seria apenas adicionar mais um '../', por exemplo: '../../index.html'
+        Mas isso pode deixar a url muito longa ou confusa de ler.
+        Podemos usar o caminho absoluto (absolute path), para isso usamos apenas '/'
+        Isso significa que estamos iniciando da pasta raiz do projeto
     -->
-    <a href="../index.html">Voltar</a>
+    <a href="/index.html">Voltar</a>
     <p>Saiba tudo sobre mim!</p>
 </body>
 </html>
