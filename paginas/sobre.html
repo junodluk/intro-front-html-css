@@ -4,6 +4,16 @@
     <title>Sobre</title>
 </head>
 <body>
-    Saiba tudo sobre mim!
+    <!--
+        Okay, mas como fazemos para o usuário voltar à página inicial ?
+        Vamos criar um novo elemento âncora na página sobre!
+        Dessa vez não vai ser tão simples
+        O arquivo index.html não está na mesma pasta que o arquivo sobre.html
+        Precisamos ir um nível acima nas pastas para acessar index.html
+        Para fazer isso digitamos '../'
+        Se quisessemos subir mais um nível seria apenas adicionar mais um '../', por exemplo: '../../index.html'
+    -->
+    <a href="../index.html">Voltar</a>
+    <p>Saiba tudo sobre mim!</p>
 </body>
 </html>
